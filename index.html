@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Issuance</title>
+    <title>Jameson Aranda | Blog</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,8 +39,8 @@
           async function fetchIssues() {
             if (!issues) {
               const { url, ...options } = endpoint("GET /repos/:owner/:repo/issues", {
-                owner: "mateogianolio",
-                repo: "issuance",
+                owner: "jamesona",
+                repo: "blog",
               });
               const res = await fetch(url, options);
               setIssues(await res.json());
